@@ -1,8 +1,8 @@
 public class NonFiction extends Book
 {
-    public NonFiction()
+    public NonFiction(String title)
     {
-        super("Non Fiction Book");
+        super(title);
         setPrice();
     }
 

@@ -2,10 +2,10 @@ public class UseBook
 {
     public static void main(String[] args)
     {
-        Fiction fic = new Fiction();
-        NonFiction nonFic = new NonFiction();
+        Book fic = new Fiction("Harry Potter");
+        Book nonFic = new NonFiction("Java Programming");
 
-        System.out.println(fic.getBookTitle() + " $" + fic.getBookPrice());
-        System.out.println(nonFic.getBookTitle() + " $" + nonFic.getBookPrice());
+        System.out.println(fic.getTitle() + " $" + fic.getPrice());
+        System.out.println(nonFic.getTitle() + " $" + nonFic.getPrice());
     }
 }

@@ -1,8 +1,10 @@
+import java.util.Scanner;
+
 public class Fiction extends Book
 {
-    public Fiction()
+    public Fiction(String title)
     {
-        super("Fiction book");
+        super(title);
         setPrice();
     }
 
