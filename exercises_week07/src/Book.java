@@ -9,11 +9,13 @@ public abstract class Book
     }
 
     public double getPrice()
+
     {
         return bookPrice;
     }
 
     public String getTitle()
+
     {
         return bookTitle;
     }
