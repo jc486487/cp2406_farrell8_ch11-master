@@ -1,28 +1,24 @@
 public class IncomingPhoneCall extends PhoneCall
 {
-    public IncomingPhoneCall(double price)
+    public final static double RATE = 0.02;
+    public IncomingPhoneCall(String num)
     {
-        super(price);
-        getNumber();
-        getPrice();
-        infoOfCall();
+        super(num);
+        price = RATE;
     }
 
+    public void getInfo()
+    {
+        System.out.println("Incoming phone call " +
+                getNumber() + " " + RATE + " per call. Total is $" +
+                + getPrice());
+    }
     public String getNumber()
     {
-        String num = "2543211";
-        return num;
+        return number;
     }
-
     public double getPrice()
     {
-        double price = 0.02;
         return price;
-    }
-
-    public String infoOfCall()
-    {
-        String info = "The call lasted 2 minutes";
-        return info;
     }
 }

@@ -3,8 +3,9 @@ public abstract class PhoneCall
     public String number;
     public double price;
 
-    public PhoneCall(double price)
+    public PhoneCall(String num)
     {
+        number = num;
         price = 0.0;
     }
 
@@ -14,5 +15,5 @@ public abstract class PhoneCall
 
     public abstract String getNumber();
     public abstract double getPrice();
-    public abstract String infoOfCall();
+    public abstract void getInfo();
 }
